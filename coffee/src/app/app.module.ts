@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ColaboradorModule } from './colaborador/colaborador.module';
 import { NavBarModule } from './nav-bar/nav-bar.module';
 
 @NgModule({
@@ -11,8 +13,9 @@ import { NavBarModule } from './nav-bar/nav-bar.module';
   ],
   imports: [
     BrowserModule,
-    NavBarModule
-
+    NavBarModule,
+    ColaboradorModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

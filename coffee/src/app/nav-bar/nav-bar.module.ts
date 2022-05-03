@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { NavBarRoutingModule } from './nav-bar-routing.module';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ColaboradorModule } from '../colaborador/colaborador.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   ],
   imports: [
     CommonModule,
-    NavBarRoutingModule
+    NavBarRoutingModule,
+    ColaboradorModule,
   ],
   exports: [
     NavBarComponent
